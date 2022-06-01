@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head><title>Lyrics Analysis</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<style>
+
+
+
+* {
+  box-sizing: border-box; font-family: "Times New Roman", Times, serif}
+
+
+  
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: PeachPuff;
+  font-family: "Times New Roman", Times, serif
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: DarkKhaki;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: DarkKhaki;
+  padding: 14px 16px;
+  background-color: PeachPuff;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: gray;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: #8c8c8c;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: center;
+  width: 100%;
+  padding: 10px;
+  background-image: #ccc;
+  height: 400px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #FFEFD5;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>"Music gives color to the air of the moment."</h2>
+        <br>
+        <h4>- Karl Lagerfeld</h4>
+      </div>
+      <div class="row">
+<div class="column">
+          <h3>All Contents</h3>
+          <a href="lyrics-analysis.html">Lyrics Analysis</a>
+		  <a href="favorite-artists.html">Favorite Artists & Composers</a>
+          <a href="favorite-genres.html">Favorite Genres</a>
+          <a href="favorite-songs.html">Favorite Songs & Compositions</a>
+         </div>
+        
+		<div class="row">
+
+        <div class="column">
+          
+           <a href="newly-discovered-songs.html">My Newly Discovered Songs</a>
+          <a href="where-to-listen-to-music.html">Where to listen to Music?</a>
+          <a href="how-music-helps-us.html">How does music help us?</a>
+        </div>
+       
+          
+    
+
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div style="padding:16px">
+
+ <style>
+ body {
+ background-color: white;
+ margin:0;
+ }
+ 
+ .patterns {
+ height: 25vh;
+ 
+ }
+ 
+ 
+ 
+ svg text {
+ font-family: Lora;
+ letter-spacing: 5px;
+ stroke: khaki;
+ font-size: 40px;
+ font-weight: 700;
+ stroke-width: 2;
+ 
+ animation: textAnimate 5s infinite alternate;
+ 
+ }
+ 
+ @keyframes textAnimate {
+ 0% {
+ stroke-dasharray: 0 50%;
+ stroke-dashoffset:  20%;
+ fill:hsl(189, 68%, 75%)
+ 
+ }
+ 
+ 100% {
+ stroke-dasharray: 50% 0;
+ stroke-dashoffstet: -20%;
+ fill: hsla(189, 68%, 75%,0%)
+ }
+ 
+ }
+ </style>
+ 
+ <div class="patterns">
+ <svg width="100%" height="100%">
+ <defs>
+ <pattern id="polka-dots" x="0" y="0"                    width="100" height="100"
+ patternUnits="userSpaceOnUse">
+ <circle fill="darkKhaki" cx="25" cy="25" r="3"></circle>
+ </pattern>  
+ <style>
+ @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+ </style>
+ 
+ </defs>
+ 
+ <rect x="0" y="0" width="100vw" height="100vh" fill="url(#polka-dots)"> </rect>
+ 
+ 
+ 
+ <text x="50%" y="50%"  text-anchor="middle"  >
+ Lyrics Analysis
+ </text>
+ </svg>
+ </div>
+ 
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+ * {
+ box-sizing: border-box;
+ }
+ 
+ body {
+ background-color: #f1f1f1;
+ padding: 0px;
+ font-family: Arial;
+ }
+ 
+ /* Center website */
+ .main {
+ max-width: 1000px;
+ margin: auto;
+ }
+ 
+ h1 {
+ font-size: 50px;
+ word-break: break-all;
+ }
+ 
+ .row {
+ margin: 8px -10px;
+ }
+ 
+ /* Add padding BETWEEN each column */
+ .row,
+ .row > .column {
+ padding: 8px;
+ }
+ 
+ /* Create four equal columns that floats next to each other */
+ .column {
+ float: left;
+ width: 25%;
+ }
+ 
+ /* Clear floats after rows */ 
+ .row:after {
+ content: "";
+ display: table;
+ clear: both;
+ }
+ 
+ /* Content */
+ .content {
+ background-color: white;
+ padding: 10px;
+ }
+ 
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 900px) {
+ .column {
+ width: 50%;
+ }
+ }
+ 
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+ .column {
+ width: 100%;
+ }
+ }
+ </style>
+
+ 
+ <!-- MAIN (Center website) -->
+ <div class="main">
+ 
+ <!-- Portfolio Gallery Grid -->
+ <div class="row">
+ <div class="column">
+ <div class="content">
+ <img src="1.jpg" alt="bts" style="width:100%">
+ <h3>2!3!</h3>
+ <h4>Artist: BTS</h4>
+ <p>This BTS song is about staying together through challenges in life.
+ We can't always expect everything to go exactly as planned in life. Unexpected challenges
+ and problems must be faced from time to time. These help us in becoming stronger than we
+ are now. Besides that, these contribute to the strengthening of our bonds with those we care 
+ about. Despite this, we must learn to look on the bright side of things and believe that everything
+ will be fine soon. Also, let us be grateful to those with whom we shared our problems and struggles, who
+ supported us when we needed it, and who stood by our side.</p>
+ 
+ </div>
+ </div>
+ <div class="column">
+ <div class="content">
+ <img src="2.jpg" alt="extreme" style="width:100%">
+ <h3>More than Words</h3>
+ <h4>Artist: Extreme</h4>
+ <p>This song basically tells you to express your feelings to the person.
+ You should do it through your actions, not just your words, as it will be more true and sincere.
+ You don't have to literally tell someone how much you love them if you express your feelings
+ through actions because actions speak louder than words. Even if you ignore all words of endearment
+ , your feelings for the person will be clear. Furthermore, actions show how much you truly care about
+ that person.</p>
+
+ </div>
+ </div>
+ <div class="column">
+ <div class="content">
+ <img src="mapa.jpeg" alt="mapa" style="width:100%">
+ <h3>MAPA</h3>
+ <h4>Artist: SB19</h4>
+ <p>Yes, it's this one! A song dedicated solely to our parents!
+ This one encourages us to be grateful to them and acknowledge their sacrifices and everything
+ they have given us. Apart from that, this song also teaches us to work hard and dedicate
+ our achievements to them. And above all, this also tells us to love our parents with all 
+ our hearts.</p>
+ 
+ </div>
+ </div>
+ <div class="column">
+ <div class="content">
+ <img src="passenger-let_her_go.jpg" alt="let her go" style="width:100%">
+ <h3>Let Her Go</h3>
+ <h4>Artist: Passenger</h4>
+ <p>This song tells us that we only see the value of a person
+ when we lose them. We sometimes forget how much they mean to us 
+ or how much they've given us. And this is the message of the song. This song
+ teaches us to learn how to value and appreciate those people that are close
+ to our hearts. We should always acknowledge their sacrifices for us and be grateful 
+ for whatever they give us. Remember, no one can predict how long we will last.</p>
+ 
+ </div>
+ </div>
+ <!-- END GRID -->
+ </div>
+ 
+ <!-- END MAIN -->
+ </div>
+ 
+ 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+   background-color: white;
+   margin:0;
+}
+
+.patterns {
+  height: 25vh;
+
+}
+
+
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 5px;
+  stroke: khaki;
+  font-size: 35px;
+  font-weight: 700;
+  stroke-width: 2;
+ 
+  animation: textAnimate 5s infinite alternate;
+  
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:hsl(189, 68%, 75%)
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%,0%)
+  }
+  
+}

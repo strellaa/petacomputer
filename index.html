@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head><title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="homegallery.css">
+<link rel="stylesheet" href="callout.css">
+
+
+<style>
+
+
+
+* {
+  box-sizing: border-box; font-family: "Times New Roman", Times, serif}
+
+</style>
+ 
+</head>
+<body>
+
+<div style="padding:5px">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+ .collapsible {
+ background-color: DarkKhaki;
+ color: white;
+ cursor: pointer;
+ padding: 18px;
+ width: 100%;
+ border: none;
+ text-align: left;
+ outline: none;
+ font-size: 15px;
+ }
+
+ .active, .collapsible:hover {
+ background-color: #555;
+ }
+
+ .content {
+ padding: 0 18px;
+ display: none;
+ overflow: hidden;
+ background-color: #f1f1f1;
+ }
+ </style>
+ </head>
+ <body>
+ 
+ <style>
+ 
+ .title-word {
+ animation: color-animation 4s linear infinite;
+ }
+ 
+ .title-word-1 {
+ --color-1: #DF8453;
+ --color-2: #3D8DAE;
+ --color-3: #E4A9A8;
+ }
+ 
+ .title-word-2 {
+ --color-1: #DBAD4A;
+ --color-2: #ACCFCB;
+ --color-3: #17494D;
+ }
+ 
+ .title-word-3 {
+ --color-1: #ACCFCB;
+ --color-2: #E4A9A8;
+ --color-3: #ACCFCB;
+ }
+ 
+ .title-word-4 {
+ --color-1: #3D8DAE;
+ --color-2: #DF8453;
+ --color-3: #E4A9A8;
+ }
+ 
+ @keyframes color-animation {
+ 0%    {color: var(--color-1)}
+ 32%   {color: var(--color-1)}
+ 33%   {color: var(--color-2)}
+ 65%   {color: var(--color-2)}
+ 66%   {color: var(--color-3)}
+ 99%   {color: var(--color-3)}
+ 100%  {color: var(--color-1)}
+ }
+ 
+ /* Here are just some visual styles. 🖌 */
+ 
+ .container {
+ display: grid;
+ place-items: center;  
+ text-align: center;
+ height: 40vh
+ }
+ 
+ .title {
+ font-family: "Montserrat", sans-serif;
+ font-weight: 800;
+ font-size: 8.5vw;
+ text-transform: uppercase;
+ }
+ 
+ </style>
+
+
+
+
+<div class="container">
+  <h1 class="title">
+    <span class="title-word title-word-1">Welcome</span>
+    <span class="title-word title-word-2">To</span>
+    <span class="title-word title-word-3">Music</span>
+    <span class="title-word title-word-4">Haven!</span>
+  </h1>
+</div>
+
+
+<hr style="height:3px;border-width:0;color:#DF8453;background-color:#DF8453">
+
+
+<h1 style="color:#E4A9A8"><center>All Contents</center></h1>
+
+<div class="gallery">
+  <a href="lyrics-analysis.html">
+    <img src="LA_HG.jpg"  width="600" height="400">
+  </a>
+  <div class="desc">Lyrics Analysis</div>
+</div>
+
+<div class="gallery">
+  <a href="favorite-artists.html">
+    <img src="FA_HG.jpg"  width="600" height="400">
+  </a>
+  <div class="desc">Favorite Artists & Composers</div>
+</div>
+
+<div class="gallery">
+  <a href="favorite-genres.html">
+    <img src="FG_HG.jpg"  width="600" height="400">
+  </a>
+  <div class="desc">Favorite Genres</div>
+</div>
+
+<div class="gallery">
+  <a href="favorite-songs.html">
+    <img src="FS_HG.jpg"  width="600" height="400">
+  </a>
+  <div class="desc">Favorite Songs</div>
+</div>
+
+<div class="gallery">
+  <a href="newly-discovered-songs.html">
+    <img src="NDS_HG.jpg"  width="600" height="400">
+  </a>
+  <div class="desc">My Newly Discovered Songs</div>
+</div>
+
+<div class="gallery">
+  <a href="where-to-listen-to-music.html">
+    <img src="WTLTM_HG.jpg"  width="600" height="400">
+  </a>
+  <div class="desc">Where to listen to Music?</div>
+</div>
+
+<div class="gallery">
+  <a href="how-music-helps-us.html">
+    <img src="HDMHU_HG.jpg"  width="600" height="400">
+  </a>
+  <div class="desc">How does music help us?</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+
+
+<div class="callout">
+  <div class="callout-header">Read Me</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <div class="callout-container">
+    <strong><p style="color:black; Font-family: Copperplate, Copperplate Gothic Light, fantasy.">Submission Info</p></strong>
+    
+    <p>This is submitted by Estrella Enopia of 9B to Sir Alcanse.</p>
+    
+    
+    <strong><p style="color:black; Font-family: Copperplate, Copperplate Gothic Light, fantasy.">Reference</p></strong>
+    
+    <p>This project was made possible with the help of w3schools tutorials and other references.</p>
+    
+    
+    <strong><p style="color:black; Font-family: Copperplate, Copperplate Gothic Light, fantasy.">What's New?</p></strong>
+    
+    <p>Fourth Quarter: The homepage was reorganized and redesigned. To decrease the file size, audio files were removed from two pages. Two new pages were added. External CSS was applied on the latest pages.</p>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+
+
+ <script>
+ var coll = document.getElementsByClassName("collapsible");
+ var i;
+
+ for (i = 0; i < coll.length; i++) {
+ coll[i].addEventListener("click", function() {
+ this.classList.toggle("active");
+ var content = this.nextElementSibling;
+ if (content.style.display === "block") {
+ content.style.display = "none";
+ } else {
+ content.style.display = "block";
+ }
+ });
+ }
+ </script>
+
+</div>
+
+</body>
+</html>

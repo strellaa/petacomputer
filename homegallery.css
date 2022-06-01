@@ -1,0 +1,21 @@
+div.gallery {
+  margin: 5px;
+  border: 4px solid PeachPuff;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 4px solid darkKhaki;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif
+}

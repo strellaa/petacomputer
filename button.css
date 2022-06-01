@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  padding: auto;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ecc6c6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-family: "Times New Roman", Times, serif
+}
+
+.button:hover {background-color: #d9d9d9}
+
+.button:active {
+  background-color: #abcced;
+  box-shadow: 0 5px #666;
+ transform: translateY(4px);
+}
